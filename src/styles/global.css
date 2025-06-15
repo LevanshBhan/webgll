@@ -1,0 +1,57 @@
+.bg-stars {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+              radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px, 100px 100px;
+  background-position: 0 0, 25px 25px;
+  background-color: transparent;
+  z-index: 0;
+}
+
+.star {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  animation: twinkle 8s linear infinite;
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+}
+
+.meteor {
+  position: absolute;
+  top: -50px;
+  width: 5px;
+  height: 5px;
+  background: linear-gradient(45deg, #f5f5dc, #d2b48c);
+  border-radius: 50%;
+  box-shadow: 0 0 10px #f5f5dc, 0 0 20px #d2b48c;
+  animation: fly-meteor 4s linear infinite;
+}
+
+@keyframes fly-meteor {
+  0% {
+    transform: translateY(0) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) translateX(50vw) rotate(45deg);
+    opacity: 0;
+  }
+}
