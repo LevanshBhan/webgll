@@ -8,33 +8,13 @@ import AboutSection from "./components/sections/About";
 import EducationSection from "./components/sections/Education";
 import ProjectsSection from "./components/sections/Projects";
 import ContactSection from "./components/sections/Contact";
-import FluidSimulation from 'fluid-simulation-react';
+import Fluid from "./components/Fluid";
 
 // Main App Component
 function App() {
   const [loading, setLoading] = useState(true);
   const [activeSection, setActiveSection] = useState("home");
   const [scrollProgress, setScrollProgress] = useState(0);
-
-  // Custom configuration for fluid simulation
-  const fluidConfig = {
-    textureDownsample: 1,
-    densityDissipation: 0.95,
-    velocityDissipation: 0.98,
-    pressureDissipation: 0.8,
-    pressureIterations: 25,
-    curl: 35,
-    splatRadius: 0.006,
-  };
-
-  // Custom colors for fluid simulation with more vibrant mixing
-  const fluidColors = [
-    [0.98, 0.96, 0.89], // Cream
-    [0.75, 0.75, 0.75], // Silver
-    [0.2, 0.6, 0.8],   // Blue
-    [0.8, 0.2, 0.4],   // Pink
-    [0.4, 0.8, 0.2],   // Green
-  ];
 
   // Handle scroll events
   const handleScroll = useCallback(() => {
@@ -69,8 +49,8 @@ function App() {
   return (
     <div className="min-h-screen bg-black text-cream font-mono">
       {/* Fluid Simulation Background */}
-      <div className="fixed inset-0 z-0">
-        <FluidSimulation config={fluidConfig} color={fluidColors} />
+      <div className="fixed inset-0 w-screen h-screen overflow-hidden">
+        <Fluid />
       </div>
 
       {/* Scroll Progress Indicator */}
@@ -122,16 +102,18 @@ function App() {
       </div>
 
       {/* Main Content - Centered */}
-      <main className="container mx-auto px-4 py-8 relative z-10">
-        <HomeSection />
-        <div className="section-divider-enhanced" />
-        <AboutSection />
-        <div className="section-divider-enhanced" />
-        <EducationSection />
-        <div className="section-divider-enhanced" />
-        <ProjectsSection />
-        <div className="section-divider-enhanced" />
-        <ContactSection />
+      <main className="relative z-10">
+        <div className="container mx-auto px-4 py-8">
+          <HomeSection />
+          <div className="section-divider-enhanced" />
+          <AboutSection />
+          <div className="section-divider-enhanced" />
+          <EducationSection />
+          <div className="section-divider-enhanced" />
+          <ProjectsSection />
+          <div className="section-divider-enhanced" />
+          <ContactSection />
+        </div>
       </main>
     </div>
   );

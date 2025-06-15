@@ -86,7 +86,7 @@ export const About = () => {
   }, []);
 
   return (
-    <section id="about" className="min-h-screen text-white py-20 px-6">
+    <section id="about" className="min-h-screen text-white py-20 px-6 relative">
       <div className="max-w-6xl mx-auto">
         <RevealOnScroll>
           <div className="text-center mb-16">
@@ -145,7 +145,7 @@ export const About = () => {
                 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                   {/* Programming Languages */}
-                  <div className="bg-black/50 backdrop-blur-sm border border-cream/20 rounded-xl p-6 hover:border-cream/40 transition-all duration-300">
+                  <div className="bg-black/20 backdrop-blur-sm border border-cream/20 rounded-xl p-6 hover:border-cream/40 transition-all duration-300">
                     <div className="flex items-center gap-3 mb-6">
                       <FaCode className="text-3xl text-cream" />
                       <h4 className="text-xl font-semibold text-cream">Programming</h4>
@@ -163,7 +163,7 @@ export const About = () => {
                             <span className="text-white">{skill.name}</span>
                             <span className="text-silver text-sm">{skill.level}%</span>
                           </div>
-                          <div className="w-full bg-black/50 rounded-full h-2 border border-cream/20">
+                          <div className="w-full bg-black/20 rounded-full h-2 border border-cream/20">
                             <motion.div
                               className="bg-gradient-to-r from-cream to-white h-full rounded-full"
                               initial={{ width: 0 }}
@@ -178,7 +178,7 @@ export const About = () => {
                   </div>
 
                   {/* Frontend */}
-                  <div className="bg-black/50 backdrop-blur-sm border border-cream/20 rounded-xl p-6 hover:border-cream/40 transition-all duration-300">
+                  <div className="bg-black/20 backdrop-blur-sm border border-cream/20 rounded-xl p-6 hover:border-cream/40 transition-all duration-300">
                     <div className="flex items-center gap-3 mb-6">
                       <FaReact className="text-3xl text-cream" />
                       <h4 className="text-xl font-semibold text-cream">Frontend</h4>
@@ -197,7 +197,7 @@ export const About = () => {
                             <span className="text-white">{skill.name}</span>
                             <span className="text-silver text-sm">{skill.level}%</span>
                           </div>
-                          <div className="w-full bg-black/50 rounded-full h-2 border border-cream/20">
+                          <div className="w-full bg-black/20 rounded-full h-2 border border-cream/20">
                             <motion.div
                               className="bg-gradient-to-r from-cream to-white h-full rounded-full"
                               initial={{ width: 0 }}
@@ -212,7 +212,7 @@ export const About = () => {
                   </div>
 
                   {/* Backend */}
-                  <div className="bg-black/50 backdrop-blur-sm border border-cream/20 rounded-xl p-6 hover:border-cream/40 transition-all duration-300">
+                  <div className="bg-black/20 backdrop-blur-sm border border-cream/20 rounded-xl p-6 hover:border-cream/40 transition-all duration-300">
                     <div className="flex items-center gap-3 mb-6">
                       <FaNodeJs className="text-3xl text-cream" />
                       <h4 className="text-xl font-semibold text-cream">Backend</h4>
@@ -229,7 +229,7 @@ export const About = () => {
                             <span className="text-white">{skill.name}</span>
                             <span className="text-silver text-sm">{skill.level}%</span>
                           </div>
-                          <div className="w-full bg-black/50 rounded-full h-2 border border-cream/20">
+                          <div className="w-full bg-black/20 rounded-full h-2 border border-cream/20">
                             <motion.div
                               className="bg-gradient-to-r from-cream to-white h-full rounded-full"
                               initial={{ width: 0 }}
@@ -244,7 +244,7 @@ export const About = () => {
                   </div>
 
                   {/* Databases */}
-                  <div className="bg-black/50 backdrop-blur-sm border border-cream/20 rounded-xl p-6 hover:border-cream/40 transition-all duration-300">
+                  <div className="bg-black/20 backdrop-blur-sm border border-cream/20 rounded-xl p-6 hover:border-cream/40 transition-all duration-300">
                     <div className="flex items-center gap-3 mb-6">
                       <FaDatabase className="text-3xl text-cream" />
                       <h4 className="text-xl font-semibold text-cream">Databases</h4>
@@ -261,7 +261,7 @@ export const About = () => {
                             <span className="text-white">{skill.name}</span>
                             <span className="text-silver text-sm">{skill.level}%</span>
                           </div>
-                          <div className="w-full bg-black/50 rounded-full h-2 border border-cream/20">
+                          <div className="w-full bg-black/20 rounded-full h-2 border border-cream/20">
                             <motion.div
                               className="bg-gradient-to-r from-cream to-white h-full rounded-full"
                               initial={{ width: 0 }}
@@ -276,7 +276,7 @@ export const About = () => {
                   </div>
 
                   {/* DevOps */}
-                  <div className="bg-black/50 backdrop-blur-sm border border-cream/20 rounded-xl p-6 hover:border-cream/40 transition-all duration-300">
+                  <div className="bg-black/20 backdrop-blur-sm border border-cream/20 rounded-xl p-6 hover:border-cream/40 transition-all duration-300">
                     <div className="flex items-center gap-3 mb-6">
                       <FaCloud className="text-3xl text-cream" />
                       <h4 className="text-xl font-semibold text-cream">DevOps</h4>
@@ -294,7 +294,7 @@ export const About = () => {
                             <span className="text-white">{skill.name}</span>
                             <span className="text-silver text-sm">{skill.level}%</span>
                           </div>
-                          <div className="w-full bg-black/50 rounded-full h-2 border border-cream/20">
+                          <div className="w-full bg-black/20 rounded-full h-2 border border-cream/20">
                             <motion.div
                               className="bg-gradient-to-r from-cream to-white h-full rounded-full"
                               initial={{ width: 0 }}
@@ -309,7 +309,7 @@ export const About = () => {
                   </div>
 
                   {/* Languages */}
-                  <div className="bg-black/50 backdrop-blur-sm border border-cream/20 rounded-xl p-6 hover:border-cream/40 transition-all duration-300">
+                  <div className="bg-black/20 backdrop-blur-sm border border-cream/20 rounded-xl p-6 hover:border-cream/40 transition-all duration-300">
                     <div className="flex items-center gap-3 mb-6">
                       <FaGlobe className="text-3xl text-cream" />
                       <h4 className="text-xl font-semibold text-cream">Languages</h4>
@@ -324,7 +324,7 @@ export const About = () => {
                             <span className="text-white">{skill.name}</span>
                             <span className="text-silver text-sm">{skill.level}%</span>
                           </div>
-                          <div className="w-full bg-black/50 rounded-full h-2 border border-cream/20">
+                          <div className="w-full bg-black/20 rounded-full h-2 border border-cream/20">
                             <motion.div
                               className="bg-gradient-to-r from-cream to-white h-full rounded-full"
                               initial={{ width: 0 }}
@@ -360,7 +360,7 @@ export const About = () => {
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5, delay: index * 0.1 }}
                       viewport={{ once: true }}
-                      className="bg-black/50 backdrop-blur-sm border border-cream/20 rounded-xl p-6 hover:border-cream/40 transition-all duration-300"
+                      className="bg-black/20 backdrop-blur-sm border border-cream/20 rounded-xl p-6 hover:border-cream/40 transition-all duration-300"
                     >
                       <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                         <div>
@@ -403,7 +403,7 @@ export const About = () => {
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5, delay: index * 0.1 }}
                       viewport={{ once: true }}
-                      className="bg-black/50 backdrop-blur-sm border border-cream/20 rounded-xl p-6 hover:border-cream/40 transition-all duration-300 text-center"
+                      className="bg-black/20 backdrop-blur-sm border border-cream/20 rounded-xl p-6 hover:border-cream/40 transition-all duration-300 text-center"
                     >
                       <div className="flex justify-center mb-4">
                         <strength.icon className="text-4xl text-cream" />

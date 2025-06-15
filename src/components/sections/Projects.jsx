@@ -90,7 +90,7 @@ const ProjectCard = ({ project, index }) => {
 
   return (
     <motion.div 
-      className="bg-black/50 backdrop-blur-sm border border-cream/20 rounded-xl overflow-hidden group cursor-pointer hover:border-cream/40 transition-all duration-300 relative"
+      className="bg-black/20 backdrop-blur-sm border border-cream/20 rounded-xl overflow-hidden group cursor-pointer hover:border-cream/40 transition-all duration-300 relative"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       initial={{ opacity: 0, y: 20 }}
@@ -121,7 +121,7 @@ const ProjectCard = ({ project, index }) => {
         
         {/* Main icon container */}
         <motion.div 
-          className="relative w-20 h-20 rounded-2xl flex items-center justify-center border-2 border-cream/40 bg-black/80 shadow-lg group-hover:border-cream/60 group-hover:shadow-cream/20 transition-all duration-500"
+          className="relative w-20 h-20 rounded-2xl flex items-center justify-center border-2 border-cream/40 bg-black/20 shadow-lg group-hover:border-cream/60 group-hover:shadow-cream/20 transition-all duration-500"
           whileHover={{ scale: 1.1 }}
           transition={{ duration: 0.3, ease: "easeOut" }}
         >

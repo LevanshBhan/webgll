@@ -69,7 +69,7 @@ const Education = () => {
   };
 
   return (
-    <section id="education" className="py-16">
+    <section id="education" className="py-16 relative">
       <motion.div
         initial="hidden"
         whileInView="visible"
