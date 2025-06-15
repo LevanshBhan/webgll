@@ -47,11 +47,9 @@ function App() {
   if (loading) return <LoadingScreen onComplete={() => setLoading(false)} />;
 
   return (
-    <div className="min-h-screen bg-black text-cream font-mono">
-      {/* Fluid Simulation Background */}
-      <div className="fixed inset-0 w-screen h-screen overflow-hidden">
-        <Fluid />
-      </div>
+    <div className="min-h-screen bg-transparent text-cream font-mono">
+      {/* Fluid Simulation Background - Full Page, not inside any container */}
+      <Fluid />
 
       {/* Scroll Progress Indicator */}
       <div className="scroll-indicator">
@@ -103,7 +101,7 @@ function App() {
 
       {/* Main Content - Centered */}
       <main className="relative z-10">
-        <div className="container mx-auto px-4 py-8">
+        <div className="container mx-auto px-4 py-8 bg-transparent">
           <HomeSection />
           <div className="section-divider-enhanced" />
           <AboutSection />

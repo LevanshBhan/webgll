@@ -124,8 +124,8 @@ export const Contact = () => {
   };
 
   return (
-    <section id="contact" className="min-h-screen text-white py-20 px-6 relative">
-      <div className="max-w-6xl mx-auto">
+    <section id="contact" className="min-h-screen bg-transparent text-white py-20 px-6 relative">
+      <div className="max-w-6xl mx-auto relative z-10">
         <RevealOnScroll>
           <motion.div 
             className="text-center mb-16"

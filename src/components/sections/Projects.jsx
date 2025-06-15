@@ -273,8 +273,8 @@ export const Projects = () => {
   }, [activeCategory]);
 
   return (
-    <section id="projects" className="min-h-screen text-white py-20 px-6">
-      <div className="max-w-6xl mx-auto">
+    <section id="projects" className="min-h-screen bg-transparent text-white py-20 px-6 relative">
+      <div className="max-w-6xl mx-auto relative z-10">
         <RevealOnScroll>
           <div className="text-center mb-16">
             <h2 className="text-5xl md:text-6xl font-bold mb-6">
